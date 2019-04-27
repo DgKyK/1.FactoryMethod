@@ -7,16 +7,8 @@ public abstract class MobilPhone {
     }
 
     public abstract void makeCall();
-    public int getBalance() {
-      return this.price * name.hashCode();
-    }
-
-    public int getPrice() {
-        return price;
-    }
-
-    public String getName() {
-        return name;
+    public int IMEI() {
+      return Math.abs(this.price * name.hashCode());
     }
 
     public void setPrice(int price) {
